@@ -1,0 +1,17 @@
+{
+  "name": "josephdarkins",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express Tutorial",
+  "main": "expresstut.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Darkins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5"
+  }
+}
