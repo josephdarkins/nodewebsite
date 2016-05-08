@@ -1,1 +1,1 @@
-This is my readme file
+This project is a copy of the code that Derek Banas runs through on his tutorial on youtube. I would highly recommend it for anyone. 
