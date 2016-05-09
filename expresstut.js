@@ -2,6 +2,10 @@ var express = require('express');
 
 var app = express();
 
+var session = require('express-session');
+
+var parseurl = require('parseurl');
+
 app.disable('x-powered-by');
 
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
