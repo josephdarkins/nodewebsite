@@ -76,8 +76,17 @@ app.post('/file-upload/:year/:month', function(req, res){
 });
 
 app.get('/cookie', function(req, res){
-    res.cookie('username', 'joseph darkins'); 
+    res.cookie('username', 'joseph darkins', {expire: new Date() + 9999}).send('username has the value joe darkins'); 
 });
+
+app.get('/listallcookies', function(req, res){
+   console.log('cookies : ' + req.cookies); 
+});
+
+app.get('/deletecookies', function(req, res){
+    res.clearCookie('username');
+    res.send('cookie deleted');
+})
 
 app.use(function(req,res){
   res.type('text/html');
